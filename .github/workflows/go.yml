@@ -38,3 +38,9 @@ jobs:
       - name: Build
         run: go build main.go
 
+      - name: Compiled package
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled_package
+          path: main
+
